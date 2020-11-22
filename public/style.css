@@ -1,0 +1,240 @@
+body {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+    background-color: #F8F8F8;
+} 
+
+/* HEADER */
+#header {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00AEEF;
+}
+
+
+#header .motiveUpLeft {left: 0;}
+#header .motiveUpRight {right: 0;}
+
+#header .logo {
+    background-image: url("/images/motives/triangleheader.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+#header .motiveUpLeft, #header .motiveUpRight {
+    position: absolute;
+    width: auto;
+    height: 25vw;
+    top:0;
+}
+
+
+@media (max-width: 1199px) {
+    #header .motiveUpLeft, #header .motiveUpRight {
+        height: 20vw;
+    }
+}
+
+/* ABOUT */
+#programa {
+    background-color: #fff;
+}
+
+#aboutDivider {
+    background-color: #fff;
+}
+
+@media (max-width: 991px) {
+    #programa iframe {
+        height: 50vw;
+    }
+}
+
+/* TEAM */
+#equipa {
+    background-image: url("/images/motives/triangleinverted.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom
+}
+
+#eventsDivider {
+    height: 30vh;
+    background-image: url('/images/motives/eventstopics.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+} 
+
+@media (max-width: 1199px) {
+    #eventsDivider {
+        height: 20vh;
+        background-image: url('/images/motives/eventsmobile.png');
+        background-position: center top;
+    }
+}
+
+#equipa .member {
+    border-radius: .5rem;
+}
+
+/* CONTACTS */
+#contactos {
+    background-color: #fff;
+}
+
+.form-control {
+    border: 3px solid #00AEEF;
+    border-radius: 0;
+}
+
+/* GO UP */
+.goup{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    transition: all .3s ease-out;
+}
+
+@media (max-width: 767px) {
+    .goup{
+        bottom: .75rem;
+        right: .75rem;
+    }
+}
+
+/* GENERAL */
+img.title{height: 2.5rem;}
+img.title-2{height: 2rem;}
+img.title-3{height: 1.75rem;}
+img.title-4{height: 1.5rem;}
+img.title-5{height: 1.25rem;}
+@media (max-width: 991px) {
+    img.title-4{height: 1.15rem;}
+}
+
+.bold {font-weight: bolder;}
+.upper {text-transform: uppercase;}
+
+.link {cursor: pointer;}
+
+@media (max-width: 991px) {
+    .maxw-100{max-width: 100%; height: auto!important;}
+}
+
+.text-primary {color: #00AEEF!important;}
+
+/*
+    Underline urls (use class underline)
+    Source: https://codepen.io/mehi/pen/MyWqPM
+*/
+a{color: inherit;}
+
+a:hover{color: inherit; text-decoration: none;}
+
+.underline {
+    display: inline-block;
+    background-image: linear-gradient(#fff, #fff);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.underline:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 3px;
+    cursor: pointer;
+}
+
+.underline-primary {
+    background-image: linear-gradient(#00AEEF, #00AEEF);
+}
+
+.underlined {
+    background-position: 100% 100%;
+    background-size: 100% 3px;
+}
+
+
+/*
+    Buttons
+*/
+button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 3px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: all .3s ease-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-position: left!important;
+}
+
+button.white {
+    background: linear-gradient(to bottom right, #fff 50%, transparent 50%);
+    background-size: 300% 400%;
+    background-position: right;
+    border-color: #fff;
+}
+
+button.primary {
+    background: linear-gradient(to bottom right, #00AEEF 50%, transparent 50%);
+    background-size: 300% 400%;
+    background-position: right;
+    border-color: #00AEEF;
+    color: #000;
+}
+
+button.primary-fill {
+    background: linear-gradient(to bottom right, #fff 50%, #00AEEF 50%);
+    background-size: 300% 400%;
+    background-position: right;
+    border-color: #00AEEF;
+    color: #fff;
+}
+
+button.primary-fill:hover {
+    color: #000;
+}
+
+button.primary-fill-static {
+    background-color: #00AEEF;
+}
+
+/*
+* Movements on hover
+*/
+.i-rotate i:first-child {
+    border-radius: 50%;
+    font-size: 0;
+    transform: rotate(180deg);
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+            transition:         transform .3s ease-in-out;
+    transition: all .3s ease-out;
+}
+.i-rotate:hover i:first-child {
+    font-size: inherit;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+
+.i-rotate.active i:first-child {
+    transform: rotate(360deg);
+    font-size: inherit;
+}
