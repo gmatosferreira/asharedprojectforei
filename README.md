@@ -2,6 +2,8 @@
 
 This is one page app created for the election campaign of NEI (Informatic Students Association) at University of Aveiro for the 2020/21 academic year.
 
+You can check it out at https://asharedprojectforei.pt/.
+
 
 
 ## Technologies and libraries
@@ -44,8 +46,6 @@ You can now run the app with a simple command! :)
 ```bash
 $ npm start
 ```
-
-> When you try execute this command it will throw a compilation error because the project is relying on the folders `src/Data` and `public/images` to get the data and images for rendering, that do not exist. We are generating sample data for this purpose and will make it available soon. Until then, feel free to explore the code!
 
 Feel free to change and adapt it to your needs!
 
