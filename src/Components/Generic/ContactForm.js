@@ -88,7 +88,7 @@ export default class ContactForm extends React.Component {
                             val={this.state.email}
                             name="email"
                             onChange={this.formUpdated}
-                            placeholder="Qual é o teu email?"
+                            placeholder="What is your email?"
                             className="form-control mb-3"
                             required
                         />
@@ -98,7 +98,7 @@ export default class ContactForm extends React.Component {
                             val={this.state.message}
                             name="message"
                             onChange={this.formUpdated}
-                            placeholder="Estamos ansiosos por ler o que nos tens a dizer :)"
+                            placeholder="Please write your message here :)"
                             className="form-control mb-3"
                             required
                         />
@@ -110,22 +110,21 @@ export default class ContactForm extends React.Component {
                         />
                         
                         <Button
-                            val="Submeter"
+                            val="Submit"
                             className="primary mt-3"
                         />
                     </form>
 
                     {
                         this.state.formError &&
-                        <p className="mt-3 text-center">Ocorreu um erro, por favor tenta novamente!</p>
+                        <p className="mt-3 text-center">An error occured, please try again!</p>
                     }
                 </div>
             )
         } else {
             return (
                 <div className="d-flex flex-column text-center">
-                    <p>Obrigado pela tua mensagem! :)</p>
-                    <p>Vamos analisá-la e responder-te assim que nos for possível. Está atento à tua caixa de entrada!</p>
+                    <p>Thanks for your message! :)</p>
                 </div>
             )
         }

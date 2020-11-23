@@ -39,7 +39,7 @@ body {
 }
 
 /* ABOUT */
-#programa {
+#about {
     background-color: #fff;
 }
 
@@ -48,18 +48,24 @@ body {
 }
 
 @media (max-width: 991px) {
-    #programa iframe {
+    #about iframe {
         height: 50vw;
     }
 }
 
 /* TEAM */
-#equipa {
+#team {
     background-image: url("/images/motives/triangleinverted.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom
 }
+
+#team .member {
+    border-radius: .5rem;
+}
+
+/* EVENTS */
 
 #eventsDivider {
     height: 30vh;
@@ -74,10 +80,6 @@ body {
         background-image: url('/images/motives/eventsmobile.png');
         background-position: center top;
     }
-}
-
-#equipa .member {
-    border-radius: .5rem;
 }
 
 /* CONTACTS */
