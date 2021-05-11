@@ -2,7 +2,7 @@
 
 This is one page app created for the election campaign of NEI (Informatic Students Association) at University of Aveiro for the 2020/21 academic year.
 
-You can check it out at https://asharedprojectforei.pt/.
+You can check it out at https://asharedprojectforei.gmatos.pt/.
 
 
 
